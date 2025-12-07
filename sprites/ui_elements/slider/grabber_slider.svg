@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="27.458637mm"
+   height="25.39677mm"
+   viewBox="0 0 27.458637 25.39677"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="grabber_slider.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.9477379"
+     inkscape:cx="61.096516"
+     inkscape:cy="74.188627"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showgrid="false" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-10.028465,-12.747829)">
+    <g
+       id="g1"
+       transform="matrix(0.57916926,0,0,0.57818174,8.4245035,6.5710058)"
+       style="stroke-width:1.72809;stroke-dasharray:none">
+      <ellipse
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.7295;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="ellipse1"
+         cx="29.044733"
+         cy="33.219822"
+         rx="22.142138"
+         ry="20.613899"
+         transform="matrix(1,0,-0.0573563,0.99835377,0,0)" />
+      <ellipse
+         style="fill:#dddddd;fill-opacity:1;stroke:#000000;stroke-width:1.7295;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="path1"
+         cx="27.655548"
+         cy="32.179451"
+         rx="22.142138"
+         ry="20.613899"
+         transform="matrix(1,0,-0.0573563,0.99835377,0,0)" />
+    </g>
+  </g>
+</svg>

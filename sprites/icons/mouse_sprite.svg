@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="46.254547"
+   height="56.389145"
+   viewBox="0 0 12.238182 14.919628"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="mouse_sprite.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.3772587"
+     inkscape:cx="169.53968"
+     inkscape:cy="6.89776"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-52.565421,-50.377124)">
+    <path
+       id="path1"
+       style="fill:#ffffff;fill-opacity:1;stroke:#c4c4c4;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-y="-1.2269653"
+       d="m 53.265415,51.077075 0.326291,6.267905 0.326434,6.267936 3.135604,-2.109297 c 0.06772,0.181419 0.15587,0.3607 0.264919,0.533604 l 0.874084,1.385922 c 0.679297,1.077072 1.903453,1.488528 2.744791,0.922567 l 0.977607,-0.65763 c 0.841338,-0.56596 0.97179,-1.888651 0.292494,-2.965723 l -0.874086,-1.385923 c -0.109048,-0.172904 -0.232107,-0.328701 -0.365401,-0.46601 l 3.135518,-2.109239 -5.419156,-2.8421 z"
+       inkscape:transform-center-x="-0.38109739" />
+  </g>
+</svg>

@@ -1,0 +1,727 @@
+[gd_scene load_steps=21 format=3 uid="uid://p3g20ycisgmd"]
+
+[ext_resource type="Script" uid="uid://dd7a17tc3cw4n" path="res://scripts/end_screen.gd" id="1_6e1uj"]
+[ext_resource type="AudioStream" uid="uid://np21dbrutw7p" path="res://audio_effects/victory.mp3" id="2_87vmq"]
+[ext_resource type="FontFile" uid="uid://ptmgpl8e12t8" path="res://textFonts/DynaPuff-VariableFont_wdth,wght.ttf" id="2_jc7ji"]
+[ext_resource type="AudioStream" uid="uid://iq14qm8g6k6v" path="res://audio_effects/sadtrombone.mp3" id="3_87vmq"]
+[ext_resource type="AudioStream" uid="uid://ct3u7b68kcxh0" path="res://audio_effects/mouse-click-sound.mp3" id="4_g44xs"]
+
+[sub_resource type="Animation" id="Animation_jc7ji"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ResultsPanel:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(251, 97)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ResultsPanel/StatsPanel:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ResultsPanel/StatsPanel/StatsContainer/DifficultyLabel:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ResultsPanel/StatsPanel/StatsContainer/TimeLabel:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ResultsPanel/StatsPanel/StatsContainer/BestTimeLabel:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ResultsPanel/Buttons/RetryButton:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("ResultsPanel/Buttons/MenuButton:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("MusicPlayer:playing")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Background:self_modulate:a")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1.0]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath(".:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("MusicPlayer:stream")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_87vmq")]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("ResultsPanel/ResultsLabel:text")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["¡Victory!"]
+}
+
+[sub_resource type="Animation" id="Animation_87vmq"]
+resource_name = "close_screen"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:self_modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.05, 1),
+"transitions": PackedFloat32Array(1.7411013, 1),
+"update": 0,
+"values": [0.65, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ResultsPanel:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.05, 0.4, 1),
+"transitions": PackedFloat32Array(1.5157166, 2.2191393, 0.26794332),
+"update": 0,
+"values": [Vector2(251, 97), Vector2(251, 20), Vector2(251, 1235)]
+}
+
+[sub_resource type="Animation" id="Animation_vj8vg"]
+resource_name = "show_results"
+length = 1.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ResultsPanel:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.6, 0.8),
+"transitions": PackedFloat32Array(0.26794332, 1.8660661, 1),
+"update": 0,
+"values": [Vector2(251, 1235), Vector2(251, 20), Vector2(251, 97)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ResultsPanel/StatsPanel:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1, 0.90000004),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ResultsPanel/StatsPanel/StatsContainer/DifficultyLabel:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.1, 0.90000004),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ResultsPanel/StatsPanel/StatsContainer/TimeLabel:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.1, 0.90000004),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ResultsPanel/StatsPanel/StatsContainer/BestTimeLabel:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.1, 0.90000004),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ResultsPanel/Buttons/RetryButton:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.1, 1.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("ResultsPanel/Buttons/MenuButton:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.1, 1.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("MusicPlayer:playing")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0.90000004),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Background:self_modulate:a")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0.1, 0.8),
+"transitions": PackedFloat32Array(0.6155722, 1),
+"update": 0,
+"values": [0.0, 0.65]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath(".:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("MusicPlayer:stream")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_87vmq")]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("ResultsPanel/ResultsLabel:text")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Defeat"]
+}
+
+[sub_resource type="Animation" id="Animation_g44xs"]
+resource_name = "show_results"
+length = 1.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ResultsPanel:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.6, 0.8),
+"transitions": PackedFloat32Array(0.26794332, 1.8660661, 1),
+"update": 0,
+"values": [Vector2(251, 1235), Vector2(251, 20), Vector2(251, 97)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ResultsPanel/StatsPanel:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1, 0.90000004),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ResultsPanel/StatsPanel/StatsContainer/DifficultyLabel:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.1, 0.90000004),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ResultsPanel/StatsPanel/StatsContainer/TimeLabel:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.1, 0.90000004),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ResultsPanel/StatsPanel/StatsContainer/BestTimeLabel:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.1, 0.90000004),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ResultsPanel/Buttons/RetryButton:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.1, 1.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("ResultsPanel/Buttons/MenuButton:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.1, 1.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("MusicPlayer:playing")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0.90000004),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Background:self_modulate:a")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0.1, 0.8),
+"transitions": PackedFloat32Array(0.6155722, 1),
+"update": 0,
+"values": [0.0, 0.65]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath(".:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("MusicPlayer:stream")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_87vmq")]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("ResultsPanel/ResultsLabel:text")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["¡Victory!"]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_87vmq"]
+_data = {
+&"RESET": SubResource("Animation_jc7ji"),
+&"close_screen": SubResource("Animation_87vmq"),
+&"show_results_defeat": SubResource("Animation_vj8vg"),
+&"show_results_victory": SubResource("Animation_g44xs")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_87vmq"]
+bg_color = Color(0.23013797, 0.12601525, 0.045609973, 1)
+border_width_left = 15
+border_width_top = 15
+border_width_right = 15
+border_width_bottom = 15
+border_color = Color(0.29667833, 0.14560682, 0.018424379, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_g44xs"]
+font = ExtResource("2_jc7ji")
+font_size = 251
+outline_size = 15
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 5
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(5, 5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vj8vg"]
+bg_color = Color(0.33392802, 0.15641633, 0.050293952, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.42875448, 0.27625743, 0.113835536, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_plosh"]
+font = ExtResource("2_jc7ji")
+font_size = 50
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 5
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="LabelSettings" id="LabelSettings_4j4el"]
+font = ExtResource("2_jc7ji")
+font_size = 50
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 5
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="LabelSettings" id="LabelSettings_wke0n"]
+font = ExtResource("2_jc7ji")
+font_size = 50
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 5
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_um0j2"]
+bg_color = Color(0.19387797, 0.085230894, 0.020922486, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.31896254, 0.17534837, 0.057099305, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6e1uj"]
+bg_color = Color(0.15174627, 0.060645655, 0.00916439, 1)
+border_color = Color(0.19215687, 0.08627451, 0.019607844, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jc7ji"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g44xs"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="End_Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6e1uj")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+libraries = {
+&"": SubResource("AnimationLibrary_87vmq")
+}
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("2_87vmq")
+
+[node name="ButtonPlayer" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("4_g44xs")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="ResultsPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.13100001
+anchor_top = 0.09
+anchor_right = 0.869
+anchor_bottom = 0.91
+offset_left = -0.52001953
+offset_top = -0.20000458
+offset_right = 0.52001953
+offset_bottom = 0.20092773
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_87vmq")
+
+[node name="ResultsLabel" type="Label" parent="ResultsPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.023000002
+anchor_top = 0.018000001
+anchor_right = 0.97700006
+anchor_bottom = 0.35900003
+offset_left = 149.886
+offset_top = 0.051999092
+offset_right = -149.88611
+offset_bottom = -0.074035645
+grow_horizontal = 2
+text = "¡Victory!"
+label_settings = SubResource("LabelSettings_g44xs")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StatsPanel" type="Panel" parent="ResultsPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.141
+anchor_top = 0.38000003
+anchor_right = 0.841
+anchor_bottom = 0.72700006
+offset_left = 12.061996
+offset_top = 0.3199768
+offset_right = 12.461914
+offset_bottom = -0.12207031
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vj8vg")
+
+[node name="StatsContainer" type="VBoxContainer" parent="ResultsPanel/StatsPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.05
+anchor_right = 0.95
+anchor_bottom = 0.95
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DifficultyLabel" type="Label" parent="ResultsPanel/StatsPanel/StatsContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Difficulty: Easy"
+label_settings = SubResource("LabelSettings_plosh")
+vertical_alignment = 1
+
+[node name="TimeLabel" type="Label" parent="ResultsPanel/StatsPanel/StatsContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Time: 60 seconds"
+label_settings = SubResource("LabelSettings_4j4el")
+vertical_alignment = 1
+
+[node name="BestTimeLabel" type="Label" parent="ResultsPanel/StatsPanel/StatsContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(910, 60)
+layout_mode = 2
+text = "Best Time: 60 seconds (¡New Record!)"
+label_settings = SubResource("LabelSettings_wke0n")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Buttons" type="HBoxContainer" parent="ResultsPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.07300001
+anchor_top = 0.76500005
+anchor_right = 0.92700005
+anchor_bottom = 0.95300007
+offset_left = -0.51400757
+offset_top = 0.20996094
+offset_right = 0.513916
+offset_bottom = -0.35803223
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 220
+alignment = 1
+
+[node name="RetryButton" type="Button" parent="ResultsPanel/Buttons" groups=["Interactive"]]
+custom_minimum_size = Vector2(400, 150)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_jc7ji")
+theme_override_font_sizes/font_size = 65
+theme_override_styles/normal = SubResource("StyleBoxFlat_um0j2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_6e1uj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_um0j2")
+theme_override_styles/focus = SubResource("StyleBoxFlat_jc7ji")
+text = "Retry"
+
+[node name="MenuButton" type="Button" parent="ResultsPanel/Buttons" groups=["Interactive"]]
+custom_minimum_size = Vector2(400, 150)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_jc7ji")
+theme_override_font_sizes/font_size = 65
+theme_override_styles/normal = SubResource("StyleBoxFlat_um0j2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_6e1uj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_um0j2")
+theme_override_styles/focus = SubResource("StyleBoxFlat_g44xs")
+text = "Main Menu"
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_finished"]
+[connection signal="pressed" from="ResultsPanel/Buttons/RetryButton" to="." method="_on_retry_button_pressed"]
+[connection signal="pressed" from="ResultsPanel/Buttons/MenuButton" to="." method="_on_menu_button_pressed"]
